@@ -1,6 +1,6 @@
-/* Modal Screen Styles - Connect, Import, Export, Help */
+/* Modal Screen Styles - Connect, Import, Export, Help, Baseline */
 
-ConnectionScreen, ImportScreen, ExportScreen {
+ConnectionScreen, ImportScreen, ExportScreen, BaselineScreen {
     align: center middle;
 }
 
@@ -15,6 +15,17 @@ HelpScreen {
     background: #16161e;
     border: solid #7aa2f7;
     padding: 2;
+}
+
+/* Baseline form - wider and centered */
+BaselineScreen #connect-form {
+    width: 70;  /* Increased from 50 by 20 */
+    height: auto;
+    max-height: 80%;
+    background: #16161e;
+    border: solid #7aa2f7;
+    padding: 2;
+    margin: 0 2;  # Center horizontally with small side margins
 }
 
 /* Help form - wider and full height */
@@ -92,4 +103,14 @@ Button:hover {
 Footer {
     background: #24283b;
     color: #a9b1d6;
+}
+
+/* Error message styling */
+.error-message {
+    color: #f7768e;
+    text-align: center;
+    padding: 1;
+    background: #1a1b26;
+    border: solid #f7768e;
+    margin: 1 0;
 }

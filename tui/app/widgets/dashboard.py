@@ -101,11 +101,8 @@ class DashboardWidget(Widget):
 
         if not self.baseline_config:
             yield Static(
-                "No baseline configured. Select a file to set as baseline.",
+                "No baseline configured. Press 'b' to set baseline.",
                 classes="baseline-info",
-            )
-            yield Button(
-                "Set Baseline", classes="set-baseline-btn", id="set-baseline-btn"
             )
             return
 
@@ -157,10 +154,6 @@ class DashboardWidget(Widget):
                         "Top Transit ASNs", "", top_transit_text, span=2
                     )
 
-        yield Button(
-            "Change Baseline", classes="set-baseline-btn", id="set-baseline-btn"
-        )
-
     def _create_stat_card(self, title: str, value: str, subtitle: str, span: int = 1):
         """Create a statistics card"""
         card = Vertical(classes=f"stat-card")
@@ -203,14 +196,6 @@ class DashboardWidget(Widget):
         except Exception as e:
             print(f"Error loading baseline stats: {e}")
             return None
-
-    def on_button_pressed(self, event: Button.Pressed) -> None:
-        if event.button.id == "set-baseline-btn":
-            # This would open a screen to select a baseline file
-            # For now, we'll just notify the user
-            self.app.notify(
-                "Baseline selection feature coming soon!", severity="information"
-            )
 
     def refresh_baseline(self) -> None:
         """Refresh baseline statistics"""

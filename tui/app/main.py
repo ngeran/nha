@@ -38,6 +38,7 @@ class RIBAnalyze(App):
     TITLE = "RIB Analyze"
 
     BINDINGS = [
+        ("b", "show_baseline", "Baseline"),
         ("c", "connect", "Connect"),
         ("d", "disconnect", "Disconnect"),
         ("x", "show_compare", "Compare"),
@@ -281,6 +282,12 @@ class RIBAnalyze(App):
     def action_show_help(self) -> None:
         """Show help screen."""
         self.push_screen(HelpScreen())
+
+    def action_show_baseline(self) -> None:
+        """Show baseline screen."""
+        from tui.app.screens.baseline_screen import BaselineScreen
+
+        self.push_screen(BaselineScreen())
 
     def action_show_compare(self) -> None:
         """Show compare screen."""
