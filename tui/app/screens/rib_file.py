@@ -19,10 +19,12 @@ from textual.widgets import (
 from textual.reactive import reactive
 from .detail import RouteDetailScreen
 
+
 class RIBFileScreen(Screen):
     CSS = """
     Screen {
         background: #1a1b26;
+        layout: vertical;
     }
 
     Header {
@@ -40,6 +42,8 @@ class RIBFileScreen(Screen):
 
     #rib-file-container {
         padding: 0;
+        height: 100%;
+        overflow-y: auto;
     }
 
     #rib-file-header {
@@ -60,7 +64,7 @@ class RIBFileScreen(Screen):
 
     #analysis-row {
         background: #1f2335;
-        height: auto;
+        height: 3;
         padding: 0 2;
         margin-top: 1;
         margin-bottom: 1;
@@ -73,6 +77,15 @@ class RIBFileScreen(Screen):
     .chip-sep {
         color: #3b4261;
         margin-right: 1;
+    }
+    
+    .sep {
+        color: #565f89;
+        margin: 0 1;
+    }
+    
+    #filter-spacer, #filter-spacer2 {
+        height: 1;
     }
 
     .chip {
@@ -111,19 +124,26 @@ class RIBFileScreen(Screen):
     .filter-row {
         background: #16161e;
         padding: 0 2;
-        height: 1;
-        margin-bottom: 1;
+        height: 3;
+        margin: 1 0;
+        align: left middle;
+        border-top: solid #565f89;
+        border-bottom: solid #565f89;
     }
 
     .filter-label {
-        color: #565f89;
+        color: #9aa5ce;
         width: auto;
         margin-right: 1;
+        text-style: bold;
     }
 
     #filter-prefix {
-        width: 14;
+        width: 20;
         height: 1;
+        background: #24283b;
+        color: #c0caf5;
+        border: solid #565f89;
     }
 
     #btn-all.active, #btn-active.active, #btn-inactive.active,
@@ -135,14 +155,27 @@ class RIBFileScreen(Screen):
     .filter-btn {
         width: 10;
         height: 1;
+        background: #24283b;
+        color: #9aa5ce;
+        border: solid #565f89;
+        text-align: center;
+        text-style: bold;
+    }
+    
+    .filter-btn:hover {
+        background: #3b4261;
+        color: #c0caf5;
     }
 
     DataTable {
         height: 1fr;
+        width: 100%;
+        min-height: 10;
     }
 
     .data-table {
         height: 1fr;
+        width: 100%;
     }
     """
 
@@ -164,10 +197,10 @@ class RIBFileScreen(Screen):
     filter_active = reactive("all")
     filter_prefix = reactive("")
     filter_table = reactive("")
-    analysis_filters = reactive[Set[str]] = reactive(set)
-    origin_filter = reactive[str] = reactive("")
-    transit_filter = reactive[str] = reactive("")
-    peer_filter = reactive[str] = reactive("")
+    analysis_filters = reactive(set())
+    origin_filter = reactive("")
+    transit_filter = reactive("")
+    peer_filter = reactive("")
 
     def __init__(self, file_path: Path, file_name: str = ""):
         super().__init__()
@@ -191,6 +224,7 @@ class RIBFileScreen(Screen):
                 with Horizontal(id="analysis-row-2"):
                     pass
 
+            yield Static("", id="filter-spacer")
             with Horizontal(classes="filter-row"):
                 yield Static("Filter:", classes="filter-label")
                 yield Input(placeholder="prefix...", id="filter-prefix")
@@ -204,6 +238,7 @@ class RIBFileScreen(Screen):
                 yield Button("protocol", id="btn-protocol", classes="filter-btn")
                 yield Static("|", classes="sep")
                 yield Button("table", id="btn-table", classes="filter-btn")
+            yield Static("", id="filter-spacer2")
 
             yield DataTable(id="rib-file-table", cursor_type="row", zebra_stripes=True)
         yield Footer()
@@ -220,6 +255,24 @@ class RIBFileScreen(Screen):
         if reader.read_file(self.file_path):
             self.all_routes = reader.get_routes()
             self.metadata = reader.get_metadata()
+
+            # Check if we have any routes
+            if not self.all_routes:
+                summary_text = "[red]No routes found in file[/red]"
+                self.query_one("#rib-summary-text", Static).update(summary_text)
+
+                # Still set up the table with empty data
+                table = self.query_one("#rib-file-table", DataTable)
+                table.clear()
+                table.add_columns(
+                    "*", "Prefix", "Table", "Protocol", "Next Hop", "Pref", "AS Path"
+                )
+
+                # Show a message in the analysis row
+                row1 = self.query_one("#analysis-row-1", Horizontal)
+                row1.remove_children()
+                row1.mount(Static("No routes to analyze", classes="chip info"))
+                return
 
             summary = reader.get_summary()
             self.protocols = summary.get("protocols", {})
@@ -241,19 +294,30 @@ class RIBFileScreen(Screen):
             )
             self.query_one("#rib-summary-text", Static).update(summary_text)
 
-            table = self.query_one("#rib-file-table", DataTable)
-            columns = reader.get_table_columns()
-            table.add_columns(*columns)
-
-            self._apply_filters()
-
-            # Focus on table so users can immediately select rows
-            table = self.query_one("#rib-file-table", DataTable)
-            table.focus()
+            # Schedule table population for after the screen is rendered
+            self.call_after_refresh(self._populate_table)
         else:
             self.query_one("#rib-summary-text", Static).update(
                 "[red]Error loading file[/red]"
             )
+
+    def _populate_table(self) -> None:
+        """Populate the table with route data after the screen is ready."""
+        try:
+            # Get the table widget
+            table = self.query_one("#rib-file-table", DataTable)
+
+            # Apply filters - this will also set up the table columns
+            self._apply_filters()
+
+            # Ensure the table is properly displayed
+            table.display = True
+
+            # Focus on table so users can immediately select rows
+            table.focus()
+        except Exception as e:
+            # If there's an error, try again in a moment
+            self.call_after_refresh(self._populate_table)
 
     def _build_analysis_chips(self) -> None:
         if not self.analysis_report:
@@ -346,8 +410,12 @@ class RIBFileScreen(Screen):
             row2_chips.append(("no_default", "NoDef!", "critical"))
 
         # Add protocol breakdown chips
-        for protocol, count in sorted(self.protocols.items(), key=lambda x: x[1], reverse=True)[:5]:
-            row2_chips.append((f"proto_{protocol.lower()}", f"{protocol}:{count}", "info"))
+        for protocol, count in sorted(
+            self.protocols.items(), key=lambda x: x[1], reverse=True
+        )[:5]:
+            row2_chips.append(
+                (f"proto_{protocol.lower()}", f"{protocol}:{count}", "info")
+            )
 
         # Mount chips with "|" separator
         self._mount_chips_with_separators(row1, row1_chips)
@@ -384,6 +452,7 @@ class RIBFileScreen(Screen):
 
     def _apply_filters(self) -> None:
         filtered = []
+        table = self.query_one("#rib-file-table", DataTable)
 
         self_originated_prefixes: Set[str] = set()
         non_default_lp_prefixes: Set[str] = set()
@@ -409,10 +478,16 @@ class RIBFileScreen(Screen):
             ):
                 continue
 
-            if self.filter_protocol and route.protocol.upper() != self.filter_protocol.upper():
+            if (
+                self.filter_protocol
+                and route.protocol.upper() != self.filter_protocol.upper()
+            ):
                 continue
 
-            if self.protocol_filter and route.protocol.upper() != self.protocol_filter.upper():
+            if (
+                self.protocol_filter
+                and route.protocol.upper() != self.protocol_filter.upper()
+            ):
                 continue
 
             if self.filter_table and route.table != self.filter_table:
@@ -442,7 +517,9 @@ class RIBFileScreen(Screen):
                 if "prepending" in self.analysis_filters:
                     as_path = (route.as_path or "").strip()
                     tokens = [
-                        t for t in as_path.split() if t not in ("I", "E", "?", "Aggregated")
+                        t
+                        for t in as_path.split()
+                        if t not in ("I", "E", "?", "Aggregated")
                     ]
                     # Count consecutive occurrences
                     for i, token in enumerate(tokens[:-1]):
@@ -475,14 +552,88 @@ class RIBFileScreen(Screen):
 
                 if "no_default" in self.analysis_filters:
                     # Check if prefix is not a default route
-                    if not (
-                        route.prefix == "0.0.0.0/0"
-                        or route.prefix == "::/0"
-                    ):
+                    if not (route.prefix == "0.0.0.0/0" or route.prefix == "::/0"):
                         continue
 
+                # If we get here, the route passes all filters
+                filtered.append(route)
+
+        # Clear the table completely
+        table.clear()
+
+        # Re-add columns (clear() removes them)
+        columns = ["Act", "Prefix", "Table", "Protocol", "Next-Hop", "Pref", "AS Path"]
+        table.add_columns(*columns)
+
+        # Apply filters and add routes
+        for route in self.all_routes:
+            # Prefix filter
+            if (
+                self.filter_prefix
+                and self.filter_prefix.lower() not in route.prefix.lower()
+            ):
+                continue
+
+            # Active filter
+            if self.filter_active == "active" and not route.active:
+                continue
+            if self.filter_active == "inactive" and route.active:
+                continue
+
+            # Protocol filter
+            if (
+                self.protocol_filter
+                and route.protocol.upper() != self.protocol_filter.upper()
+            ):
+                continue
+
+            # Table filter
+            if self.filter_table and route.table != self.filter_table:
+                continue
+
+            # Analysis filters
+            if self.analysis_filters:
+                # Simple analysis filter checks
+                if "bgp" in self.analysis_filters and route.protocol.upper() != "BGP":
+                    continue
+
+            # If we get here, the route passes all filters
+            filtered.append(route)
+
+        # Add filtered routes
+        for route in filtered:
             row_data = route.to_table_row()
             table.add_row(*row_data)
+
+        # Ensure the table is refreshed
+        table.refresh()
+
+        # Force a repaint
+        table._size = table._size  # Trigger size recalculation
+
+    def action_focus_filter(self) -> None:
+        """Focus on the prefix filter input."""
+        self.query_one("#filter-prefix", Input).focus()
+
+    def action_reset_filters(self) -> None:
+        """Reset all filters to default values."""
+        self.filter_prefix = ""
+        self.filter_active = "all"
+        self.protocol_filter = ""
+        self.filter_table = ""
+        self.analysis_filters = set()
+        self.origin_filter = ""
+        self.transit_filter = ""
+        self.peer_filter = ""
+
+        # Update UI elements
+        self.query_one("#filter-prefix", Input).value = ""
+        self._update_active_buttons("btn-all")
+
+        # Re-apply filters
+        self._apply_filters()
+
+        self.notify("Filters reset", severity="information")
 
     def on_input_changed(self, event: Input.Changed) -> None:
         if event.input.id == "filter-prefix":
@@ -519,41 +670,78 @@ class RIBFileScreen(Screen):
     def _update_analysis_filters(self) -> None:
         """Update analysis filters based on current filter states."""
         filters = set()
-        
+
         if self.origin_filter:
             filters.add(f"origin_{self.origin_filter}")
-        
+
         if self.transit_filter:
             filters.add(f"transit_{self.transit_filter}")
-        
+
         if self.peer_filter:
             filters.add(f"peer_{self.peer_filter}")
-        
+
         if self.protocol_filter:
             filters.add(f"proto_{self.protocol_filter}")
-        
+
         self.analysis_filters = filters
+
+    def _toggle_analysis_filter(self, analysis_key: str) -> None:
+        """Toggle an analysis filter on/off."""
+        # Check if this is a special filter that should be exclusive
+        if analysis_key.startswith("origin_"):
+            asn = analysis_key.replace("origin_", "")
+            if self.origin_filter == asn:
+                self.origin_filter = ""
+            else:
+                self.origin_filter = asn
+        elif analysis_key.startswith("transit_"):
+            asn = analysis_key.replace("transit_", "")
+            if self.transit_filter == asn:
+                self.transit_filter = ""
+            else:
+                self.transit_filter = asn
+        elif analysis_key.startswith("peer_"):
+            peer = analysis_key.replace("peer_", "")
+            if self.peer_filter == peer:
+                self.peer_filter = ""
+            else:
+                self.peer_filter = peer
+        elif analysis_key.startswith("proto_"):
+            proto = analysis_key.replace("proto_", "")
+            if self.protocol_filter == proto:
+                self.protocol_filter = ""
+            else:
+                self.protocol_filter = proto
+        else:
+            # For general filters, just toggle them in the set
+            if analysis_key in self.analysis_filters:
+                self.analysis_filters.remove(analysis_key)
+            else:
+                self.analysis_filters.add(analysis_key)
+
+        # Rebuild analysis filters from the reactive attributes
+        self._update_analysis_filters()
 
     def _cycle_protocol(self) -> None:
         """Cycle through available protocols."""
         if not self.protocols:
             return
-        
+
         protocols = list(self.protocols.keys())
         if not protocols:
             return
-        
+
         if self.protocol_filter in protocols:
             current_index = protocols.index(self.protocol_filter)
             next_index = (current_index + 1) % len(protocols)
         else:
             next_index = 0
-        
+
         self.protocol_filter = protocols[next_index]
         self._update_analysis_filters()
         self._build_analysis_chips()
         self._apply_filters()
-        
+
         # Update protocol button label
         btn = self.query_one("#btn-protocol", Button)
         if self.protocol_filter:
@@ -621,7 +809,7 @@ class RIBFileScreen(Screen):
         """Cycle through available routing tables."""
         if not self.tables:
             return
-        
+
         tables = list(self.tables.keys())
         if not tables:
             return

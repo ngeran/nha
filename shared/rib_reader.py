@@ -106,7 +106,53 @@ class RIBReader:
             if "route-information" in data:
                 return self._read_junos_json(file_path, data)
 
-            # Our custom format
+            # Check if it's a list format (like routes.json)
+            if isinstance(data, list):
+                self.metadata = {
+                    "device": "unknown",
+                    "hostname": "unknown",
+                    "timestamp": "",
+                    "total_routes": len(data),
+                    "format": "JSON",
+                }
+
+                self.routes = []
+                for route_data in data:
+                    # Handle both "prefix" and "destination" field names
+                    prefix = route_data.get("prefix", route_data.get("destination", ""))
+                    if not prefix:
+                        continue
+
+                    # Handle next_hop extraction from next_hops array
+                    next_hop = route_data.get("next_hop", "")
+                    if (
+                        not next_hop
+                        and "next_hops" in route_data
+                        and route_data["next_hops"]
+                    ):
+                        next_hop_obj = route_data["next_hops"][0]
+                        next_hop = next_hop_obj.get("to", next_hop_obj.get("via", ""))
+
+                    route = RouteInfo(
+                        prefix=prefix,
+                        table=route_data.get("table", "inet.0"),
+                        protocol=route_data.get("protocol", "Unknown"),
+                        next_hop=next_hop,
+                        age=route_data.get("age", 0),
+                        preference=int(route_data.get("preference", 0)),
+                        metric=int(route_data.get("med", route_data.get("metric", 0))),
+                        active=route_data.get("active", False),
+                        as_path=route_data.get("as_path", ""),
+                        local_pref=str(route_data.get("local_pref", "")),
+                        med=str(route_data.get("med", "")),
+                        learned_from=route_data.get("learned_from", ""),
+                        peer_type=route_data.get("peer_type", ""),
+                        communities=route_data.get("communities", []),
+                    )
+                    self.routes.append(route)
+                return True
+
+            # Our custom format (dict with routes key)
             self.metadata = {
                 "device": data.get("device", "unknown"),
                 "hostname": data.get("hostname", "unknown"),
