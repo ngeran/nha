@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY tui/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy shared models and TUI code
+COPY shared/ /app/shared/
+COPY tui/app/ /app/tui/app/
+COPY tui/styles/ /app/tui/styles/
+
+ENV PYTHONPATH=/app
+
+# Entry point for the TUI
+CMD ["python", "tui/app/main.py"]

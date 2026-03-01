@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <!-- Baseline routing table for RIB Monitor -->
+    <!-- Add route entries here in XML format -->
+</routes>

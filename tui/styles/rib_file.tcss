@@ -1,0 +1,93 @@
+/* RIB File Screen Styles */
+
+Screen {
+    background: #1a1b26;
+}
+
+Header {
+    dock: top;
+    height: 1;
+    padding: 0 1;
+    background: #24283b;
+}
+
+Footer {
+    dock: bottom;
+    height: 1;
+}
+
+#rib-file-container {
+    padding: 0;
+    height: 100%;
+}
+
+#rib-file-header {
+    text-align: center;
+    padding: 0 1;
+    background: #1f2335;
+    height: 1;
+}
+
+#rib-summary-text {
+    color: #a9b1d6;
+    text-align: center;
+    padding: 0 1;
+    background: #16161e;
+    height: 1;
+}
+
+/* Filter rows */
+.filter-row {
+    height: auto;
+    padding: 0 1;
+    background: #24283b;
+}
+
+.filter-label {
+    color: #565f89;
+    width: 7;
+    padding: 1;
+}
+
+#filter-prefix {
+    width: 20;
+    margin: 1;
+}
+
+#btn-all, #btn-active, #btn-inactive, #btn-protocol {
+    min-width: 10;
+    margin: 1;
+}
+
+/* Results */
+#results-text {
+    color: #565f89;
+    padding: 0 1;
+    background: #16161e;
+    height: 1;
+}
+
+/* Data Table */
+#rib-file-table {
+    height: 1fr;
+    width: 100%;
+}
+
+DataTable {
+    height: 100%;
+}
+
+DataTable > .datatable--header {
+    background: #24283b;
+    color: #7aa2f7;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #3b4261;
+    color: #c0caf5;
+}
+
+DataTable > .datatable--hover {
+    background: #292e42;
+}

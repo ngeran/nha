@@ -1,0 +1,68 @@
+/* Main TUI Styles for RIB Analyze */
+
+Screen {
+    background: #1a1b26;
+    color: #a9b1d6;
+}
+
+/* App Container */
+#app-container {
+    height: 100%;
+}
+
+/* Connection Status Bar */
+#connection-status {
+    background: #24283b;
+    color: #a9b1d6;
+    padding: 0 2;
+    text-align: left;
+}
+
+/* Main Content */
+#main-content {
+    height: 1fr;
+    padding: 1;
+}
+
+/* Full-width files section */
+#files-section-full {
+    height: 1fr;
+}
+
+.section-header {
+    color: #7aa2f7;
+    text-style: bold;
+    background: #24283b;
+    padding: 0 1;
+    margin-bottom: 1;
+}
+
+/* DataTable */
+DataTable {
+    background: #1a1b26;
+    color: #a9b1d6;
+}
+
+DataTable > .datatable--header {
+    background: #24283b;
+    color: #7aa2f7;
+}
+
+DataTable > .datatable--cursor {
+    background: #3b4261;
+    color: #c0caf5;
+}
+
+DataTable > .datatable--hover {
+    background: #292e42;
+}
+
+/* Header & Footer */
+Header {
+    background: #24283b;
+    color: #c0caf5;
+}
+
+Footer {
+    background: #24283b;
+}

@@ -1,0 +1,128 @@
+{
+  "device": "172.27.200.201",
+  "hostname": "Vector-SRX210",
+  "timestamp": "2026-02-28T01:11:28.990176",
+  "routes": [
+    {
+      "prefix": "0.0.0.0",
+      "table": "inet.0",
+      "protocol": "Static",
+      "next_hop": "vlan.0",
+      "age": 0,
+      "preference": 5,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.0.1.0",
+      "table": "inet.0",
+      "protocol": "OSPF",
+      "next_hop": "ge-0/0/1.0",
+      "age": 0,
+      "preference": 10,
+      "metric": 1,
+      "active": true
+    },
+    {
+      "prefix": "10.0.1.1",
+      "table": "inet.0",
+      "protocol": "OSPF",
+      "next_hop": "ge-0/0/1.0",
+      "age": 0,
+      "preference": 10,
+      "metric": 1,
+      "active": true
+    },
+    {
+      "prefix": "10.100.250.1",
+      "table": "inet.0",
+      "protocol": "OSPF",
+      "next_hop": "ge-0/0/1.0",
+      "age": 0,
+      "preference": 10,
+      "metric": 1,
+      "active": true
+    },
+    {
+      "prefix": "10.100.250.1",
+      "table": "inet.0",
+      "protocol": "BGP",
+      "next_hop": "ge-0/0/1.0",
+      "age": 0,
+      "preference": 170,
+      "metric": 0,
+      "active": false
+    },
+    {
+      "prefix": "10.100.250.2",
+      "table": "inet.0",
+      "protocol": "Direct",
+      "next_hop": "lo0.0",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.100.250.2",
+      "table": "inet.0",
+      "protocol": "Local",
+      "next_hop": "",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.255.0.0",
+      "table": "inet.0",
+      "protocol": "Direct",
+      "next_hop": "ge-0/0/1.0",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.255.0.1",
+      "table": "inet.0",
+      "protocol": "Local",
+      "next_hop": "",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "172.27.200.0",
+      "table": "inet.0",
+      "protocol": "Direct",
+      "next_hop": "vlan.0",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "172.27.200.201",
+      "table": "inet.0",
+      "protocol": "Local",
+      "next_hop": "",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "224.0.0.5",
+      "table": "inet.0",
+      "protocol": "OSPF",
+      "next_hop": "",
+      "age": 0,
+      "preference": 10,
+      "metric": 1,
+      "active": true
+    }
+  ],
+  "total_routes": 12
+}

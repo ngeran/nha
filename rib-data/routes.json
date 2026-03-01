@@ -1,0 +1,3934 @@
+[
+    {
+        "destination": "19.232.200.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 60,
+        "med": 232,
+        "learned_from": "10.100.177.29",
+        "as_path": "65030 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.156",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 1002658"
+            }
+        ]
+    },
+    {
+        "destination": "104.96.220.0/22",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "ge-1/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "2.66.51.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 194,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "5511 174 64500 I",
+        "communities": [
+            "64512:300",
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.82",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 257307"
+            }
+        ]
+    },
+    {
+        "destination": "100.128.0.0/20",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.4",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "53.96.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 49,
+        "med": 489,
+        "learned_from": "10.100.177.27",
+        "as_path": "5511 64510 I",
+        "communities": [
+            "64512:666",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.233",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 213084"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.104.6/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 548,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "4.185.0.0/16",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 98,
+        "med": 88,
+        "learned_from": "10.100.177.26",
+        "as_path": "2914 1273 64500 I",
+        "communities": [
+            "64512:200",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.41",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 1024623"
+            }
+        ]
+    },
+    {
+        "destination": "121.146.200.0/22",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "111.81.220.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 199,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "65020 I",
+        "communities": [
+            "no-advertise",
+            "64512:200",
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.193",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 758143"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.89.10/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 7739,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "101.131.96.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 104,
+        "med": 76,
+        "learned_from": "10.100.177.26",
+        "as_path": "2914 65001 I",
+        "communities": [
+            "64512:300",
+            "no-advertise",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.185",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 687206"
+            }
+        ]
+    },
+    {
+        "destination": "38.26.39.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 43,
+        "med": 102,
+        "learned_from": "10.100.177.27",
+        "as_path": "2914 1273 1299 65030 I",
+        "communities": [
+            "64512:100",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.171",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 300815"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.112.13/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 64493,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.188.14/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 45699,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "141.225.244.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 40,
+        "med": 99,
+        "learned_from": "10.100.177.29",
+        "as_path": "6461 3257 65100 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.66",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 466835"
+            }
+        ]
+    },
+    {
+        "destination": "179.164.173.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 57,
+        "med": 66,
+        "learned_from": "10.100.177.26",
+        "as_path": "64500 I",
+        "communities": [
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.186",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 136594"
+            }
+        ]
+    },
+    {
+        "destination": "144.182.154.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "ge-1/1/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "58.173.102.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "110.19.122.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 182,
+        "med": 0,
+        "learned_from": "10.100.177.29",
+        "as_path": "3356 174 65030 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.188",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 460137"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.41.20/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 6104,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "50.240.0.0/20",
+        "protocol": "Direct",
+        "preference": "0",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.4",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "45.253.208.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 215,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "3257 3356 1299 174 65020 I",
+        "communities": [
+            "64512:100",
+            "no-export",
+            "64512:0:65535"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.169",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 523478"
+            }
+        ]
+    },
+    {
+        "destination": "127.224.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 60,
+        "med": 189,
+        "learned_from": "10.100.177.29",
+        "as_path": "1299 65100 I",
+        "communities": [
+            "64512:100",
+            "64512:200",
+            "64512:300",
+            "64512:100:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.118",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 115998"
+            }
+        ]
+    },
+    {
+        "destination": "72.228.60.0/22",
+        "protocol": "RSVP",
+        "preference": "7",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "ge-1/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "96.132.146.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 93,
+        "med": 85,
+        "learned_from": "10.100.177.26",
+        "as_path": "6461 3356 3257 65020 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.157",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 450777"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.215.26/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 13894,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "19.216.93.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "peer",
+        "local_pref": 88,
+        "med": 30,
+        "learned_from": "10.100.177.26",
+        "as_path": "5511 1299 174 2914 64500 I",
+        "communities": [
+            "no-export",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.63",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 715089"
+            }
+        ]
+    },
+    {
+        "destination": "19.216.93.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 98,
+        "med": 30,
+        "learned_from": "10.100.177.29",
+        "as_path": "3356 5511 6461 64510 I",
+        "communities": [
+            "no-export",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.188",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 952316"
+            }
+        ]
+    },
+    {
+        "destination": "157.58.175.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 211,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "3257 6461 65100 I",
+        "communities": [
+            "64512:666",
+            "no-export",
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.80",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 59399"
+            }
+        ]
+    },
+    {
+        "destination": "77.70.90.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 182,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "5511 174 65100 I",
+        "communities": [
+            "65000:777",
+            "no-advertise",
+            "64512:200",
+            "64512:100:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.154",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 786923"
+            }
+        ]
+    },
+    {
+        "destination": "148.11.201.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 195,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "174 6461 65200 I",
+        "communities": [
+            "no-advertise",
+            "64512:666",
+            "64512:100:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.116",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 395438"
+            }
+        ]
+    },
+    {
+        "destination": "99.96.0.0/20",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "127.112.188.0/24",
+        "protocol": "Direct",
+        "preference": "0",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.1",
+                "via": "ge-1/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "19.29.48.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "upstream",
+        "local_pref": 0,
+        "med": 318,
+        "learned_from": "10.100.177.29",
+        "as_path": "1299 3257 5511 65020 I",
+        "communities": [
+            "64512:300",
+            "64512:200",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.172",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 509320"
+            }
+        ]
+    },
+    {
+        "destination": "19.29.48.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 42,
+        "med": 318,
+        "learned_from": "10.100.177.27",
+        "as_path": "2914 174 1273 1299 65100 I",
+        "communities": [
+            "64512:300",
+            "64512:200",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.25",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 141744"
+            }
+        ]
+    },
+    {
+        "destination": "80.79.200.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 183,
+        "med": 0,
+        "learned_from": "10.100.177.30",
+        "as_path": "3257 3356 174 65020 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.16",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 448505"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.169.35/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 44685,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "121.144.0.0/20",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.4",
+                "via": "ge-1/1/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.47.37/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 39897,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.252.38/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 19579,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.166.39/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 59026,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.98.40/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 48764,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "19.176.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 181,
+        "med": 0,
+        "learned_from": "10.100.177.30",
+        "as_path": "3257 65010 I",
+        "communities": [
+            "64512:300",
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.68",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 936821"
+            }
+        ]
+    },
+    {
+        "destination": "112.71.25.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 45,
+        "med": 332,
+        "learned_from": "10.100.177.30",
+        "as_path": "65001 I",
+        "communities": [
+            "no-export",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.207",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 198770"
+            }
+        ]
+    },
+    {
+        "destination": "19.244.60.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 186,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "5511 65010 I",
+        "communities": [
+            "64512:666",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.168",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 795302"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.48.44/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 29346,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.66.45/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 39344,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.98.46/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 37104,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "172.222.36.0/24",
+        "protocol": "RSVP",
+        "preference": "7",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.5",
+                "via": "ge-1/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "183.120.86.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 214,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "2914 65200 I",
+        "communities": [
+            "64512:300",
+            "64512:666",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.237",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 481184"
+            }
+        ]
+    },
+    {
+        "destination": "20.161.94.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 181,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "3356 65100 I",
+        "communities": [
+            "64512:300",
+            "no-export",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.149",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 616555"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.220.50/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 58255,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "4.224.152.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 59,
+        "med": 67,
+        "learned_from": "10.100.177.30",
+        "as_path": "65100 I",
+        "communities": [
+            "no-export",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.47",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 933998"
+            }
+        ]
+    },
+    {
+        "destination": "127.212.71.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 106,
+        "med": 85,
+        "learned_from": "10.100.177.30",
+        "as_path": "174 1273 6461 65030 I",
+        "communities": [
+            "no-export",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.44",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 876485"
+            }
+        ]
+    },
+    {
+        "destination": "192.61.229.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 49,
+        "med": 95,
+        "learned_from": "10.100.177.27",
+        "as_path": "5511 6461 65001 I",
+        "communities": [
+            "64512:666",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.191",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 501498"
+            }
+        ]
+    },
+    {
+        "destination": "11.32.7.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 101,
+        "med": 8,
+        "learned_from": "10.100.177.26",
+        "as_path": "174 65001 I",
+        "communities": [
+            "64512:100",
+            "64512:300",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.206",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 600730"
+            }
+        ]
+    },
+    {
+        "destination": "87.86.132.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 96,
+        "med": 60,
+        "learned_from": "10.100.177.26",
+        "as_path": "3257 2914 65030 I",
+        "communities": [
+            "no-advertise",
+            "64512:100",
+            "65000:777",
+            "64512:100:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.36",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 997166"
+            }
+        ]
+    },
+    {
+        "destination": "149.213.144.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "upstream",
+        "local_pref": 39,
+        "med": 179,
+        "learned_from": "10.100.177.30",
+        "as_path": "3257 1273 65030 I",
+        "communities": [
+            "64512:666",
+            "64512:100",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.74",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 852758"
+            }
+        ]
+    },
+    {
+        "destination": "149.213.144.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 52,
+        "med": 179,
+        "learned_from": "10.100.177.26",
+        "as_path": "1299 64500 I",
+        "communities": [
+            "64512:666",
+            "64512:100",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.21",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 257215"
+            }
+        ]
+    },
+    {
+        "destination": "212.212.64.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 97,
+        "med": 15,
+        "learned_from": "10.100.177.26",
+        "as_path": "65010 I",
+        "communities": [
+            "64512:200",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.211",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 827899"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.143.58/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 26107,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "130.159.244.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 101,
+        "med": 97,
+        "learned_from": "10.100.177.29",
+        "as_path": "1299 174 65100 I",
+        "communities": [
+            "65000:777",
+            "no-advertise",
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.38",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 132552"
+            }
+        ]
+    },
+    {
+        "destination": "58.10.68.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 202,
+        "med": 0,
+        "learned_from": "10.100.177.29",
+        "as_path": "2914 65010 I",
+        "communities": [
+            "64512:666",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.38",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 325132"
+            }
+        ]
+    },
+    {
+        "destination": "20.86.194.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 198,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "3257 65100 I",
+        "communities": [
+            "no-advertise",
+            "64512:100",
+            "65000:777",
+            "64512:0:65535"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.171",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 200154"
+            }
+        ]
+    },
+    {
+        "destination": "44.112.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 96,
+        "med": 74,
+        "learned_from": "10.100.177.29",
+        "as_path": "3257 6461 5511 65100 I",
+        "communities": [
+            "64512:666",
+            "64512:300",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.46",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 758151"
+            }
+        ]
+    },
+    {
+        "destination": "18.117.254.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 109,
+        "med": 13,
+        "learned_from": "10.100.177.30",
+        "as_path": "2914 65100 I",
+        "communities": [
+            "64512:100",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.101",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 426599"
+            }
+        ]
+    },
+    {
+        "destination": "122.111.186.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 52,
+        "med": 50,
+        "learned_from": "10.100.177.29",
+        "as_path": "1299 65020 I",
+        "communities": [
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.91",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 147551"
+            }
+        ]
+    },
+    {
+        "destination": "158.160.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 94,
+        "med": 76,
+        "learned_from": "10.100.177.27",
+        "as_path": "5511 174 3356 64500 I",
+        "communities": [
+            "64512:300",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.56",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 804116"
+            }
+        ]
+    },
+    {
+        "destination": "133.117.95.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 42,
+        "med": 204,
+        "learned_from": "10.100.177.29",
+        "as_path": "65200 I",
+        "communities": [
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.227",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 56086"
+            }
+        ]
+    },
+    {
+        "destination": "28.63.85.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "ge-1/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "151.45.79.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "customer",
+        "local_pref": 170,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "1273 65020 I",
+        "communities": [
+            "65000:777",
+            "64512:100",
+            "64512:0:65535"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.31",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 1035405"
+            }
+        ]
+    },
+    {
+        "destination": "151.45.79.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 191,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "2914 65010 I",
+        "communities": [
+            "65000:777",
+            "64512:100",
+            "64512:0:65535"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.202",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 196970"
+            }
+        ]
+    },
+    {
+        "destination": "119.192.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 220,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "3257 1299 5511 64510 I",
+        "communities": [
+            "64512:200",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.77",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 731736"
+            }
+        ]
+    },
+    {
+        "destination": "190.22.95.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 101,
+        "med": 23,
+        "learned_from": "10.100.177.30",
+        "as_path": "3257 1299 3356 65001 I",
+        "communities": [
+            "65000:777",
+            "64512:100:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.119",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 304856"
+            }
+        ]
+    },
+    {
+        "destination": "70.25.148.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 95,
+        "med": 27,
+        "learned_from": "10.100.177.30",
+        "as_path": "65100 I",
+        "communities": [
+            "64512:200",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.175",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 165708"
+            }
+        ]
+    },
+    {
+        "destination": "4.254.136.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "upstream",
+        "local_pref": 7,
+        "med": 56,
+        "learned_from": "10.100.177.29",
+        "as_path": "6461 65100 I",
+        "communities": [
+            "no-advertise",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.228",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 165583"
+            }
+        ]
+    },
+    {
+        "destination": "4.254.136.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 44,
+        "med": 56,
+        "learned_from": "10.100.177.30",
+        "as_path": "6461 3257 2914 174 65001 I",
+        "communities": [
+            "no-advertise",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.153",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 708577"
+            }
+        ]
+    },
+    {
+        "destination": "100.55.208.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 214,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "1273 5511 6461 65100 I",
+        "communities": [
+            "65000:777",
+            "64512:300",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.6",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 861697"
+            }
+        ]
+    },
+    {
+        "destination": "15.182.150.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 50,
+        "med": 497,
+        "learned_from": "10.100.177.30",
+        "as_path": "3257 174 64510 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.128",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 771819"
+            }
+        ]
+    },
+    {
+        "destination": "68.242.216.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 200,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "2914 5511 65001 I",
+        "communities": [
+            "no-export",
+            "64512:666",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.200",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 816915"
+            }
+        ]
+    },
+    {
+        "destination": "46.176.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 51,
+        "med": 362,
+        "learned_from": "10.100.177.26",
+        "as_path": "6461 65200 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.75",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 1019939"
+            }
+        ]
+    },
+    {
+        "destination": "5.5.130.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "4.80.0.0/20",
+        "protocol": "RSVP",
+        "preference": "7",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.5",
+                "via": "ge-1/1/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "71.137.252.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "peer",
+        "local_pref": 89,
+        "med": 7,
+        "learned_from": "10.100.177.29",
+        "as_path": "174 5511 1273 65001 I",
+        "communities": [
+            "no-export",
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.238",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 963891"
+            }
+        ]
+    },
+    {
+        "destination": "71.137.252.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 99,
+        "med": 7,
+        "learned_from": "10.100.177.26",
+        "as_path": "2914 3257 174 6461 65001 I",
+        "communities": [
+            "no-export",
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.209",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 274249"
+            }
+        ]
+    },
+    {
+        "destination": "148.48.0.0/20",
+        "protocol": "Direct",
+        "preference": "0",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "ge-1/1/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "140.84.200.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 186,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "1299 5511 3257 6461 65200 I",
+        "communities": [
+            "64512:666",
+            "64512:200",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.140",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 634624"
+            }
+        ]
+    },
+    {
+        "destination": "96.82.136.0/22",
+        "protocol": "Direct",
+        "preference": "0",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "ge-1/1/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "85.128.158.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 97,
+        "med": 47,
+        "learned_from": "10.100.177.29",
+        "as_path": "2914 1299 3356 1273 65020 I",
+        "communities": [
+            "64512:100",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.128",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 952292"
+            }
+        ]
+    },
+    {
+        "destination": "1.168.16.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 214,
+        "med": 0,
+        "learned_from": "10.100.177.30",
+        "as_path": "65030 I",
+        "communities": [
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.75",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 507059"
+            }
+        ]
+    },
+    {
+        "destination": "160.240.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 54,
+        "med": 167,
+        "learned_from": "10.100.177.27",
+        "as_path": "3257 2914 5511 65020 I",
+        "communities": [
+            "no-export",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.252",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 965644"
+            }
+        ]
+    },
+    {
+        "destination": "169.158.89.0/24",
+        "protocol": "Direct",
+        "preference": "0",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "ge-1/1/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "88.187.209.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 199,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "64510 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.232",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 934469"
+            }
+        ]
+    },
+    {
+        "destination": "192.173.216.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 51,
+        "med": 20,
+        "learned_from": "10.100.177.30",
+        "as_path": "3356 174 2914 3257 65100 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.112",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 41889"
+            }
+        ]
+    },
+    {
+        "destination": "63.20.165.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 102,
+        "med": 46,
+        "learned_from": "10.100.177.29",
+        "as_path": "3356 174 65020 I",
+        "communities": [
+            "no-advertise",
+            "64512:100",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.225",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 789528"
+            }
+        ]
+    },
+    {
+        "destination": "17.128.149.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 204,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "6461 64500 I",
+        "communities": [
+            "64512:666",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.55",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 199662"
+            }
+        ]
+    },
+    {
+        "destination": "114.24.59.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 45,
+        "med": 304,
+        "learned_from": "10.100.177.30",
+        "as_path": "3356 1273 2914 65010 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.1",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 276946"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.85.92/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 11010,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "181.4.16.0/22",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.5",
+                "via": "ge-1/1/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "30.40.103.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 200,
+        "med": 0,
+        "learned_from": "10.100.177.30",
+        "as_path": "5511 174 3257 3356 64510 I",
+        "communities": [
+            "no-advertise",
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.222",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 535262"
+            }
+        ]
+    },
+    {
+        "destination": "179.123.146.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "205.22.43.0/24",
+        "protocol": "RSVP",
+        "preference": "7",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "ge-1/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "205.29.77.0/24",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "ge-1/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.153.98/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 17460,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "157.129.0.0/16",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 59,
+        "med": 44,
+        "learned_from": "10.100.177.30",
+        "as_path": "174 3257 1299 6461 64500 I",
+        "communities": [
+            "64512:100",
+            "64512:200",
+            "no-export",
+            "64512:0:65535"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.243",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 129036"
+            }
+        ]
+    },
+    {
+        "destination": "196.92.140.0/22",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.4",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "59.91.184.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 54,
+        "med": 321,
+        "learned_from": "10.100.177.26",
+        "as_path": "1299 3356 65001 I",
+        "communities": [
+            "64512:300",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.69",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 670993"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.163.102/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 47311,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "133.13.117.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 90,
+        "med": 63,
+        "learned_from": "10.100.177.26",
+        "as_path": "64500 I",
+        "communities": [
+            "64512:100",
+            "no-export",
+            "65000:777",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.24",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 1016639"
+            }
+        ]
+    },
+    {
+        "destination": "31.135.203.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 57,
+        "med": 61,
+        "learned_from": "10.100.177.26",
+        "as_path": "3356 5511 65020 I",
+        "communities": [
+            "64512:300",
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.191",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 65626"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.84.105/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 57,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "48.94.138.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 42,
+        "med": 108,
+        "learned_from": "10.100.177.29",
+        "as_path": "3257 1299 3356 2914 65010 I",
+        "communities": [
+            "64512:200",
+            "64512:300",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.136",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 425360"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.120.107/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 27986,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "37.21.71.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 54,
+        "med": 483,
+        "learned_from": "10.100.177.29",
+        "as_path": "65001 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.133",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 367946"
+            }
+        ]
+    },
+    {
+        "destination": "78.16.73.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 96,
+        "med": 83,
+        "learned_from": "10.100.177.30",
+        "as_path": "64510 I",
+        "communities": [
+            "65000:777",
+            "64512:300",
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.162",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 276287"
+            }
+        ]
+    },
+    {
+        "destination": "138.129.160.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 105,
+        "med": 70,
+        "learned_from": "10.100.177.26",
+        "as_path": "1273 174 64500 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.9",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 97289"
+            }
+        ]
+    },
+    {
+        "destination": "195.95.49.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 188,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "65100 I",
+        "communities": [
+            "no-advertise",
+            "64512:300",
+            "64512:100:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.87",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 285536"
+            }
+        ]
+    },
+    {
+        "destination": "195.228.108.0/22",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.1",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "16.226.146.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 215,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "1273 3257 65200 I",
+        "communities": [
+            "65000:777",
+            "64512:0:65535"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.88",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 93005"
+            }
+        ]
+    },
+    {
+        "destination": "204.122.240.0/24",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.1",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "82.195.0.0/16",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 50,
+        "med": 7,
+        "learned_from": "10.100.177.29",
+        "as_path": "2914 65001 I",
+        "communities": [
+            "64512:666",
+            "64512:100",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.115",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 310619"
+            }
+        ]
+    },
+    {
+        "destination": "34.236.220.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "upstream",
+        "local_pref": 0,
+        "med": 9,
+        "learned_from": "10.100.177.27",
+        "as_path": "5511 6461 174 2914 64500 I",
+        "communities": [
+            "64512:200",
+            "64512:666",
+            "no-export",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.49",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 789629"
+            }
+        ]
+    },
+    {
+        "destination": "34.236.220.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 42,
+        "med": 9,
+        "learned_from": "10.100.177.30",
+        "as_path": "3257 65020 I",
+        "communities": [
+            "64512:200",
+            "64512:666",
+            "no-export",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.99",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 545613"
+            }
+        ]
+    },
+    {
+        "destination": "201.96.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "peer",
+        "local_pref": 80,
+        "med": 24,
+        "learned_from": "10.100.177.30",
+        "as_path": "5511 2914 64500 I",
+        "communities": [
+            "64512:100",
+            "64512:666",
+            "65000:777",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.154",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 1048365"
+            }
+        ]
+    },
+    {
+        "destination": "201.96.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 97,
+        "med": 24,
+        "learned_from": "10.100.177.26",
+        "as_path": "2914 1299 174 65010 I",
+        "communities": [
+            "64512:100",
+            "64512:666",
+            "65000:777",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.136",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 194263"
+            }
+        ]
+    },
+    {
+        "destination": "88.7.22.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 57,
+        "med": 64,
+        "learned_from": "10.100.177.26",
+        "as_path": "1299 64500 I",
+        "communities": [
+            "64512:300",
+            "no-advertise",
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.163",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 772035"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.146.119/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 62290,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "116.66.39.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 104,
+        "med": 44,
+        "learned_from": "10.100.177.26",
+        "as_path": "1273 65001 I",
+        "communities": [
+            "no-export",
+            "64512:300",
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.196",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 796966"
+            }
+        ]
+    },
+    {
+        "destination": "43.56.56.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 109,
+        "med": 80,
+        "learned_from": "10.100.177.26",
+        "as_path": "2914 64500 I",
+        "communities": [
+            "64512:666",
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.143",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 754016"
+            }
+        ]
+    },
+    {
+        "destination": "157.119.93.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 214,
+        "med": 0,
+        "learned_from": "10.100.177.29",
+        "as_path": "1299 5511 3356 1273 65010 I",
+        "communities": [
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.204",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 909353"
+            }
+        ]
+    },
+    {
+        "destination": "171.141.87.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 106,
+        "med": 38,
+        "learned_from": "10.100.177.29",
+        "as_path": "65200 I",
+        "communities": [
+            "no-export",
+            "64512:666",
+            "no-advertise",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.103",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 35386"
+            }
+        ]
+    },
+    {
+        "destination": "136.205.250.0/24",
+        "protocol": "RSVP",
+        "preference": "7",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.5",
+                "via": "ge-1/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.147.125/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 13150,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "84.235.170.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 99,
+        "med": 56,
+        "learned_from": "10.100.177.29",
+        "as_path": "65020 I",
+        "communities": [
+            "64512:300",
+            "64512:200",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.15",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 589952"
+            }
+        ]
+    },
+    {
+        "destination": "87.119.128.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 109,
+        "med": 13,
+        "learned_from": "10.100.177.27",
+        "as_path": "174 64500 I",
+        "communities": [
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.148",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 207780"
+            }
+        ]
+    },
+    {
+        "destination": "100.224.243.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 41,
+        "med": 455,
+        "learned_from": "10.100.177.26",
+        "as_path": "5511 64500 I",
+        "communities": [
+            "64512:300",
+            "64512:200",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.13",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 443310"
+            }
+        ]
+    },
+    {
+        "destination": "71.120.0.0/16",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 218,
+        "med": 0,
+        "learned_from": "10.100.177.29",
+        "as_path": "1273 6461 3257 3356 65200 I",
+        "communities": [
+            "no-advertise",
+            "64512:200",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.1",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 448996"
+            }
+        ]
+    },
+    {
+        "destination": "223.126.99.0/24",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.4",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "98.23.183.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 211,
+        "med": 0,
+        "learned_from": "10.100.177.29",
+        "as_path": "2914 1299 3356 65001 I",
+        "communities": [
+            "no-advertise",
+            "65000:777",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.230",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 191931"
+            }
+        ]
+    },
+    {
+        "destination": "35.105.64.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 110,
+        "med": 9,
+        "learned_from": "10.100.177.27",
+        "as_path": "3257 174 3356 1299 65010 I",
+        "communities": [
+            "65000:777",
+            "64512:300",
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.86",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 917775"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.25.133/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 4055,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.99.134/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 21942,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.113.135/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 29545,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.26.136/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 24683,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "135.129.85.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 94,
+        "med": 5,
+        "learned_from": "10.100.177.29",
+        "as_path": "6461 5511 174 2914 65020 I",
+        "communities": [
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.7",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 655344"
+            }
+        ]
+    },
+    {
+        "destination": "168.112.0.0/20",
+        "protocol": "Direct",
+        "preference": "0",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.1",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "104.41.253.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 92,
+        "med": 43,
+        "learned_from": "10.100.177.29",
+        "as_path": "5511 1299 64500 I",
+        "communities": [
+            "no-export",
+            "64512:200",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.129",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 369306"
+            }
+        ]
+    },
+    {
+        "destination": "192.55.31.0/24",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "106.175.76.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 48,
+        "med": 144,
+        "learned_from": "10.100.177.29",
+        "as_path": "64500 I",
+        "communities": [
+            "64512:100",
+            "64512:666",
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.159",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 811377"
+            }
+        ]
+    },
+    {
+        "destination": "114.23.125.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.1",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "200.16.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 102,
+        "med": 54,
+        "learned_from": "10.100.177.26",
+        "as_path": "2914 1273 1299 3257 65100 I",
+        "communities": [
+            "64512:100",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.166",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 606580"
+            }
+        ]
+    },
+    {
+        "destination": "111.190.24.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 42,
+        "med": 155,
+        "learned_from": "10.100.177.27",
+        "as_path": "1273 65200 I",
+        "communities": [
+            "64512:300",
+            "no-export",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.97",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 629663"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.135.145/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 21319,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "130.133.51.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 59,
+        "med": 236,
+        "learned_from": "10.100.177.26",
+        "as_path": "65030 I",
+        "communities": [
+            "64512:100",
+            "64512:666",
+            "64512:100:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.21",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 77419"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.187.147/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 4394,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "42.26.44.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 97,
+        "med": 47,
+        "learned_from": "10.100.177.26",
+        "as_path": "174 1299 6461 65200 I",
+        "communities": [
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.54",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 238765"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.14.149/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 38510,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "21.157.223.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "peer",
+        "local_pref": 65,
+        "med": 69,
+        "learned_from": "10.100.177.27",
+        "as_path": "2914 3356 174 6461 65020 I",
+        "communities": [
+            "64512:300",
+            "65000:777",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.143",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 120135"
+            }
+        ]
+    },
+    {
+        "destination": "21.157.223.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 99,
+        "med": 69,
+        "learned_from": "10.100.177.30",
+        "as_path": "5511 65200 I",
+        "communities": [
+            "64512:300",
+            "65000:777",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.130",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 878538"
+            }
+        ]
+    },
+    {
+        "destination": "106.4.195.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 50,
+        "med": 472,
+        "learned_from": "10.100.177.27",
+        "as_path": "2914 1299 5511 65010 I",
+        "communities": [
+            "64512:666",
+            "64512:300",
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.240",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 477537"
+            }
+        ]
+    },
+    {
+        "destination": "92.144.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 109,
+        "med": 35,
+        "learned_from": "10.100.177.27",
+        "as_path": "5511 174 65001 I",
+        "communities": [
+            "no-advertise",
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.219",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 7405"
+            }
+        ]
+    },
+    {
+        "destination": "54.227.128.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "33.41.240.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 49,
+        "med": 70,
+        "learned_from": "10.100.177.27",
+        "as_path": "65001 I",
+        "communities": [
+            "64512:666",
+            "64512:200",
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.37",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 869703"
+            }
+        ]
+    },
+    {
+        "destination": "54.204.204.0/24",
+        "protocol": "Direct",
+        "preference": "0",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.3",
+                "via": "ge-1/1/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.160.156/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 42324,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "75.78.168.0/22",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.4",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "213.186.159.0/24",
+        "protocol": "Direct",
+        "preference": "0",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.1",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "223.232.128.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 218,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "65100 I",
+        "communities": [
+            "64512:100",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.158",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 707192"
+            }
+        ]
+    },
+    {
+        "destination": "47.123.172.0/22",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "107.192.65.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 181,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "3356 1299 2914 3257 65030 I",
+        "communities": [
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.211",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 806978"
+            }
+        ]
+    },
+    {
+        "destination": "19.247.248.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 198,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "5511 65030 I",
+        "communities": [
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.80",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 94747"
+            }
+        ]
+    },
+    {
+        "destination": "39.196.180.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 46,
+        "med": 111,
+        "learned_from": "10.100.177.30",
+        "as_path": "174 1299 3356 5511 65100 I",
+        "communities": [
+            "65000:777",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.69",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 146320"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.92.164/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 52917,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "36.174.92.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 218,
+        "med": 0,
+        "learned_from": "10.100.177.30",
+        "as_path": "1299 174 5511 65001 I",
+        "communities": [
+            "64512:666",
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.42",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 836846"
+            }
+        ]
+    },
+    {
+        "destination": "33.251.83.0/24",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.1",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "62.78.180.0/22",
+        "protocol": "LDP",
+        "preference": "9",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "xe-0/0/1.0"
+            }
+        ]
+    },
+    {
+        "destination": "76.229.204.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 104,
+        "med": 42,
+        "learned_from": "10.100.177.29",
+        "as_path": "65020 I",
+        "communities": [
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.112",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 923682"
+            }
+        ]
+    },
+    {
+        "destination": "32.6.128.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 51,
+        "med": 36,
+        "learned_from": "10.100.177.26",
+        "as_path": "5511 65020 I",
+        "communities": [
+            "64512:666",
+            "64512:200",
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.53",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 652218"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.88.170/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 39672,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "105.234.6.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 212,
+        "med": 0,
+        "learned_from": "10.100.177.29",
+        "as_path": "3257 3356 65020 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.169",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 1003165"
+            }
+        ]
+    },
+    {
+        "destination": "56.237.24.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 105,
+        "med": 93,
+        "learned_from": "10.100.177.30",
+        "as_path": "65020 I",
+        "communities": [
+            "64512:300",
+            "64512:666"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.239",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 824162"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.251.173/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 12698,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "104.7.164.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 41,
+        "med": 43,
+        "learned_from": "10.100.177.27",
+        "as_path": "1273 5511 3356 65030 I",
+        "communities": [
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.205",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 314076"
+            }
+        ]
+    },
+    {
+        "destination": "141.64.0.0/20",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 109,
+        "med": 67,
+        "learned_from": "10.100.177.29",
+        "as_path": "1299 5511 1273 64510 I",
+        "communities": [
+            "64512:200",
+            "no-export",
+            "64512:0:65535"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.163",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 499667"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.218.176/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 17158,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "14.136.168.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "customer",
+        "local_pref": 167,
+        "med": 0,
+        "learned_from": "10.100.177.29",
+        "as_path": "3356 3257 174 65100 I",
+        "communities": [
+            "64512:100",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.210",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 812201"
+            }
+        ]
+    },
+    {
+        "destination": "14.136.168.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 189,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "5511 6461 65020 I",
+        "communities": [
+            "64512:100",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.240",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 884251"
+            }
+        ]
+    },
+    {
+        "destination": "126.60.106.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.5",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "155.65.250.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 103,
+        "med": 37,
+        "learned_from": "10.100.177.26",
+        "as_path": "1299 65010 I",
+        "communities": [
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.107",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 869686"
+            }
+        ]
+    },
+    {
+        "destination": "182.139.137.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 108,
+        "med": 45,
+        "learned_from": "10.100.177.27",
+        "as_path": "6461 3356 5511 1273 65010 I",
+        "communities": [
+            "64512:666",
+            "64512:300",
+            "65000:1:1"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.92",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 79723"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.73.181/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 14146,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "73.181.207.0/24",
+        "protocol": "Static",
+        "preference": "5",
+        "active": true,
+        "next_hops": [
+            {
+                "to": "10.247.0.2",
+                "via": "xe-0/0/0.0"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.108.183/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 54607,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "167.217.0.0/16",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 100,
+        "med": 66,
+        "learned_from": "10.100.177.29",
+        "as_path": "65020 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.176",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 520799"
+            }
+        ]
+    },
+    {
+        "destination": "171.189.40.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 54,
+        "med": 422,
+        "learned_from": "10.100.177.27",
+        "as_path": "6461 65200 I",
+        "communities": [
+            "64512:100"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.106",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 402381"
+            }
+        ]
+    },
+    {
+        "destination": "184.56.1.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 192,
+        "med": 0,
+        "learned_from": "10.100.177.30",
+        "as_path": "3257 2914 65200 I",
+        "communities": [
+            "64512:100",
+            "64512:666",
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.99",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 374717"
+            }
+        ]
+    },
+    {
+        "destination": "1.157.255.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 50,
+        "med": 291,
+        "learned_from": "10.100.177.26",
+        "as_path": "2914 1273 174 5511 65100 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.60",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 273564"
+            }
+        ]
+    },
+    {
+        "destination": "159.213.136.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "customer",
+        "local_pref": 182,
+        "med": 0,
+        "learned_from": "10.100.177.27",
+        "as_path": "65020 I",
+        "communities": [
+            "64512:100",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.36",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 311002"
+            }
+        ]
+    },
+    {
+        "destination": "159.213.136.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 194,
+        "med": 0,
+        "learned_from": "10.100.177.30",
+        "as_path": "6461 1273 65030 I",
+        "communities": [
+            "64512:100",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.58",
+                "via": "xe-0/0/1.0",
+                "mpls_label": "Push 1002449"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.167.189/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 47288,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "1.6.186.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": false,
+        "peer_type": "peer",
+        "local_pref": 89,
+        "med": 11,
+        "learned_from": "10.100.177.30",
+        "as_path": "5511 3356 174 2914 65020 I",
+        "communities": [
+            "no-advertise",
+            "no-export",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.143",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 773887"
+            }
+        ]
+    },
+    {
+        "destination": "1.6.186.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 109,
+        "med": 11,
+        "learned_from": "10.100.177.27",
+        "as_path": "3257 174 5511 65100 I",
+        "communities": [
+            "no-advertise",
+            "no-export",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.106",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 158139"
+            }
+        ]
+    },
+    {
+        "destination": "209.11.244.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 42,
+        "med": 171,
+        "learned_from": "10.100.177.29",
+        "as_path": "65200 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.168",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 825213"
+            }
+        ]
+    },
+    {
+        "destination": "222.225.114.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 57,
+        "med": 27,
+        "learned_from": "10.100.177.30",
+        "as_path": "174 65200 I",
+        "communities": [
+            "64512:100",
+            "no-advertise",
+            "64512:200"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.238",
+                "via": "xe-0/0/0.0",
+                "mpls_label": "Push 80354"
+            }
+        ]
+    },
+    {
+        "destination": "10.255.171.193/32",
+        "protocol": "OSPF",
+        "preference": "10",
+        "active": true,
+        "metric": 36408,
+        "next_hops": [
+            {
+                "via": "lo0.0"
+            }
+        ]
+    },
+    {
+        "destination": "26.206.158.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 103,
+        "med": 5,
+        "learned_from": "10.100.177.26",
+        "as_path": "6461 65010 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.3",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 52695"
+            }
+        ]
+    },
+    {
+        "destination": "46.66.239.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 43,
+        "med": 447,
+        "learned_from": "10.100.177.27",
+        "as_path": "174 1299 2914 3356 65200 I",
+        "communities": [
+            "no-export",
+            "65000:777",
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.222",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 814729"
+            }
+        ]
+    },
+    {
+        "destination": "134.131.12.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 59,
+        "med": 115,
+        "learned_from": "10.100.177.27",
+        "as_path": "1299 1273 65100 I",
+        "communities": [
+            "64512:100",
+            "65000:777"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.184",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 416693"
+            }
+        ]
+    },
+    {
+        "destination": "113.34.129.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "peer",
+        "local_pref": 108,
+        "med": 92,
+        "learned_from": "10.100.177.26",
+        "as_path": "1273 1299 6461 64500 I",
+        "communities": [
+            "no-export",
+            "65000:777",
+            "64512:300",
+            "64512:0:65535"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.118",
+                "via": "ge-1/0/0.0",
+                "mpls_label": "Push 36261"
+            }
+        ]
+    },
+    {
+        "destination": "102.219.24.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "upstream",
+        "local_pref": 56,
+        "med": 72,
+        "learned_from": "10.100.177.29",
+        "as_path": "1299 1273 3257 3356 65001 I",
+        "communities": [
+            "no-export"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.94",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 1022282"
+            }
+        ]
+    },
+    {
+        "destination": "68.249.160.0/22",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 181,
+        "med": 0,
+        "learned_from": "10.100.177.26",
+        "as_path": "3257 65200 I",
+        "communities": [
+            "64512:300"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.172",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 98920"
+            }
+        ]
+    },
+    {
+        "destination": "12.114.193.0/24",
+        "protocol": "BGP",
+        "preference": "170",
+        "active": true,
+        "peer_type": "customer",
+        "local_pref": 213,
+        "med": 0,
+        "learned_from": "10.100.177.29",
+        "as_path": "3257 3356 1299 65030 I",
+        "communities": [
+            "64512:100",
+            "no-advertise"
+        ],
+        "next_hops": [
+            {
+                "to": "10.100.177.184",
+                "via": "ge-1/1/0.0",
+                "mpls_label": "Push 475264"
+            }
+        ]
+    }
+]

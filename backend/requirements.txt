@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+redis
+arq
+junos-eznc
+websockets
+httpx

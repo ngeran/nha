@@ -1,0 +1,3940 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/25.2R1-S1.4/junos" junos:junos="25.2R1-S1.4">
+    <route-information xmlns="http://xml.juniper.net/junos/25.2R0/junos-routing">
+        <route-table>
+            <table-name>inet.0</table-name>
+            <rt junos:style="brief">
+                <rt-destination>19.232.200.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>60</local-preference>
+                    <med>232</med>
+                    <as-path>65030 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.156</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 1002658</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>104.96.220.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>ge-1/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>2.66.51.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>194</local-preference>
+                    <med>0</med>
+                    <as-path>5511 174 64500 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.82</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 257307</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>100.128.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.4</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>53.96.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>49</local-preference>
+                    <med>489</med>
+                    <as-path>5511 64510 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.233</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 213084</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.104.6/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>548</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>4.185.0.0/16</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>98</local-preference>
+                    <med>88</med>
+                    <as-path>2914 1273 64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.41</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 1024623</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>121.146.200.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>111.81.220.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>199</local-preference>
+                    <med>0</med>
+                    <as-path>65020 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:200</community>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.193</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 758143</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.89.10/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>7739</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>101.131.96.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>104</local-preference>
+                    <med>76</med>
+                    <as-path>2914 65001 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>no-advertise</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.185</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 687206</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>38.26.39.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>43</local-preference>
+                    <med>102</med>
+                    <as-path>2914 1273 1299 65030 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.171</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 300815</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.112.13/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>64493</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.188.14/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>45699</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>141.225.244.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>40</local-preference>
+                    <med>99</med>
+                    <as-path>6461 3257 65100 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.66</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 466835</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>179.164.173.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>57</local-preference>
+                    <med>66</med>
+                    <as-path>64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.186</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 136594</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>144.182.154.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>ge-1/1/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>58.173.102.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>110.19.122.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>182</local-preference>
+                    <med>0</med>
+                    <as-path>3356 174 65030 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.188</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 460137</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.41.20/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>6104</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>50.240.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Direct</protocol-name>
+                    <preference>0</preference>
+                    <nh>
+                        <to>10.247.0.4</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>45.253.208.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>215</local-preference>
+                    <med>0</med>
+                    <as-path>3257 3356 1299 174 65020 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-export</community>
+                        <community>64512:0:65535</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.169</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 523478</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>127.224.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>60</local-preference>
+                    <med>189</med>
+                    <as-path>1299 65100 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:200</community>
+                        <community>64512:300</community>
+                        <community>64512:100:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.118</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 115998</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>72.228.60.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>RSVP</protocol-name>
+                    <preference>7</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>ge-1/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>96.132.146.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>93</local-preference>
+                    <med>85</med>
+                    <as-path>6461 3356 3257 65020 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.157</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 450777</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.215.26/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>13894</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>19.216.93.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>88</local-preference>
+                    <med>30</med>
+                    <as-path>5511 1299 174 2914 64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.63</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 715089</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>19.216.93.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>98</local-preference>
+                    <med>30</med>
+                    <as-path>3356 5511 6461 64510 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.188</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 952316</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>157.58.175.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>211</local-preference>
+                    <med>0</med>
+                    <as-path>3257 6461 65100 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>no-export</community>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.80</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 59399</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>77.70.90.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>182</local-preference>
+                    <med>0</med>
+                    <as-path>5511 174 65100 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>no-advertise</community>
+                        <community>64512:200</community>
+                        <community>64512:100:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.154</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 786923</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>148.11.201.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>195</local-preference>
+                    <med>0</med>
+                    <as-path>174 6461 65200 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:666</community>
+                        <community>64512:100:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.116</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 395438</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>99.96.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>127.112.188.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Direct</protocol-name>
+                    <preference>0</preference>
+                    <nh>
+                        <to>10.247.0.1</to>
+                        <via>ge-1/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>19.29.48.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>0</local-preference>
+                    <med>318</med>
+                    <as-path>1299 3257 5511 65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:200</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.172</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 509320</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>19.29.48.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>42</local-preference>
+                    <med>318</med>
+                    <as-path>2914 174 1273 1299 65100 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:200</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.25</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 141744</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>80.79.200.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>183</local-preference>
+                    <med>0</med>
+                    <as-path>3257 3356 174 65020 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.16</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 448505</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.169.35/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>44685</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>121.144.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.4</to>
+                        <via>ge-1/1/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.47.37/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>39897</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.252.38/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>19579</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.166.39/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>59026</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.98.40/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>48764</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>19.176.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>181</local-preference>
+                    <med>0</med>
+                    <as-path>3257 65010 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.68</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 936821</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>112.71.25.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>45</local-preference>
+                    <med>332</med>
+                    <as-path>65001 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.207</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 198770</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>19.244.60.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>186</local-preference>
+                    <med>0</med>
+                    <as-path>5511 65010 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.168</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 795302</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.48.44/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>29346</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.66.45/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>39344</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.98.46/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>37104</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>172.222.36.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>RSVP</protocol-name>
+                    <preference>7</preference>
+                    <nh>
+                        <to>10.247.0.5</to>
+                        <via>ge-1/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>183.120.86.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>214</local-preference>
+                    <med>0</med>
+                    <as-path>2914 65200 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:666</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.237</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 481184</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>20.161.94.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>181</local-preference>
+                    <med>0</med>
+                    <as-path>3356 65100 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>no-export</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.149</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 616555</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.220.50/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>58255</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>4.224.152.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>59</local-preference>
+                    <med>67</med>
+                    <as-path>65100 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.47</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 933998</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>127.212.71.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>106</local-preference>
+                    <med>85</med>
+                    <as-path>174 1273 6461 65030 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.44</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 876485</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>192.61.229.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>49</local-preference>
+                    <med>95</med>
+                    <as-path>5511 6461 65001 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.191</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 501498</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>11.32.7.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>101</local-preference>
+                    <med>8</med>
+                    <as-path>174 65001 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:300</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.206</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 600730</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>87.86.132.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>96</local-preference>
+                    <med>60</med>
+                    <as-path>3257 2914 65030 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:100</community>
+                        <community>65000:777</community>
+                        <community>64512:100:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.36</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 997166</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>149.213.144.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>39</local-preference>
+                    <med>179</med>
+                    <as-path>3257 1273 65030 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.74</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 852758</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>149.213.144.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>52</local-preference>
+                    <med>179</med>
+                    <as-path>1299 64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.21</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 257215</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>212.212.64.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>97</local-preference>
+                    <med>15</med>
+                    <as-path>65010 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.211</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 827899</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.143.58/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>26107</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>130.159.244.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>101</local-preference>
+                    <med>97</med>
+                    <as-path>1299 174 65100 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>no-advertise</community>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.38</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 132552</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>58.10.68.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>202</local-preference>
+                    <med>0</med>
+                    <as-path>2914 65010 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.38</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 325132</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>20.86.194.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>198</local-preference>
+                    <med>0</med>
+                    <as-path>3257 65100 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:100</community>
+                        <community>65000:777</community>
+                        <community>64512:0:65535</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.171</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 200154</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>44.112.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>96</local-preference>
+                    <med>74</med>
+                    <as-path>3257 6461 5511 65100 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:300</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.46</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 758151</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>18.117.254.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>109</local-preference>
+                    <med>13</med>
+                    <as-path>2914 65100 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.101</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 426599</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>122.111.186.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>52</local-preference>
+                    <med>50</med>
+                    <as-path>1299 65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.91</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 147551</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>158.160.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>94</local-preference>
+                    <med>76</med>
+                    <as-path>5511 174 3356 64500 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.56</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 804116</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>133.117.95.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>42</local-preference>
+                    <med>204</med>
+                    <as-path>65200 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.227</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 56086</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>28.63.85.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>ge-1/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>151.45.79.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>170</local-preference>
+                    <med>0</med>
+                    <as-path>1273 65020 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>64512:100</community>
+                        <community>64512:0:65535</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.31</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 1035405</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>151.45.79.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>191</local-preference>
+                    <med>0</med>
+                    <as-path>2914 65010 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>64512:100</community>
+                        <community>64512:0:65535</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.202</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 196970</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>119.192.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>220</local-preference>
+                    <med>0</med>
+                    <as-path>3257 1299 5511 64510 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.77</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 731736</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>190.22.95.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>101</local-preference>
+                    <med>23</med>
+                    <as-path>3257 1299 3356 65001 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>64512:100:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.119</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 304856</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>70.25.148.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>95</local-preference>
+                    <med>27</med>
+                    <as-path>65100 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.175</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 165708</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>4.254.136.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>7</local-preference>
+                    <med>56</med>
+                    <as-path>6461 65100 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.228</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 165583</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>4.254.136.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>44</local-preference>
+                    <med>56</med>
+                    <as-path>6461 3257 2914 174 65001 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.153</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 708577</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>100.55.208.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>214</local-preference>
+                    <med>0</med>
+                    <as-path>1273 5511 6461 65100 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>64512:300</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.6</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 861697</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>15.182.150.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>50</local-preference>
+                    <med>497</med>
+                    <as-path>3257 174 64510 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.128</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 771819</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>68.242.216.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>200</local-preference>
+                    <med>0</med>
+                    <as-path>2914 5511 65001 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:666</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.200</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 816915</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>46.176.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>51</local-preference>
+                    <med>362</med>
+                    <as-path>6461 65200 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.75</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 1019939</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>5.5.130.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>4.80.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>RSVP</protocol-name>
+                    <preference>7</preference>
+                    <nh>
+                        <to>10.247.0.5</to>
+                        <via>ge-1/1/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>71.137.252.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>89</local-preference>
+                    <med>7</med>
+                    <as-path>174 5511 1273 65001 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.238</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 963891</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>71.137.252.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>99</local-preference>
+                    <med>7</med>
+                    <as-path>2914 3257 174 6461 65001 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.209</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 274249</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>148.48.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Direct</protocol-name>
+                    <preference>0</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>ge-1/1/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>140.84.200.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>186</local-preference>
+                    <med>0</med>
+                    <as-path>1299 5511 3257 6461 65200 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:200</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.140</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 634624</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>96.82.136.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Direct</protocol-name>
+                    <preference>0</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>ge-1/1/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>85.128.158.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>97</local-preference>
+                    <med>47</med>
+                    <as-path>2914 1299 3356 1273 65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.128</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 952292</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>1.168.16.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>214</local-preference>
+                    <med>0</med>
+                    <as-path>65030 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.75</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 507059</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>160.240.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>54</local-preference>
+                    <med>167</med>
+                    <as-path>3257 2914 5511 65020 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.252</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 965644</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>169.158.89.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Direct</protocol-name>
+                    <preference>0</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>ge-1/1/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>88.187.209.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>199</local-preference>
+                    <med>0</med>
+                    <as-path>64510 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.232</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 934469</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>192.173.216.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>51</local-preference>
+                    <med>20</med>
+                    <as-path>3356 174 2914 3257 65100 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.112</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 41889</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>63.20.165.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>102</local-preference>
+                    <med>46</med>
+                    <as-path>3356 174 65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:100</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.225</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 789528</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>17.128.149.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>204</local-preference>
+                    <med>0</med>
+                    <as-path>6461 64500 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.55</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 199662</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>114.24.59.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>45</local-preference>
+                    <med>304</med>
+                    <as-path>3356 1273 2914 65010 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.1</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 276946</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.85.92/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>11010</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>181.4.16.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.5</to>
+                        <via>ge-1/1/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>30.40.103.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>200</local-preference>
+                    <med>0</med>
+                    <as-path>5511 174 3257 3356 64510 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.222</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 535262</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>179.123.146.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>205.22.43.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>RSVP</protocol-name>
+                    <preference>7</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>ge-1/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>205.29.77.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>ge-1/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.153.98/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>17460</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>157.129.0.0/16</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>59</local-preference>
+                    <med>44</med>
+                    <as-path>174 3257 1299 6461 64500 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:200</community>
+                        <community>no-export</community>
+                        <community>64512:0:65535</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.243</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 129036</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>196.92.140.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.4</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>59.91.184.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>54</local-preference>
+                    <med>321</med>
+                    <as-path>1299 3356 65001 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.69</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 670993</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.163.102/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>47311</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>133.13.117.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>90</local-preference>
+                    <med>63</med>
+                    <as-path>64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-export</community>
+                        <community>65000:777</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.24</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 1016639</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>31.135.203.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>57</local-preference>
+                    <med>61</med>
+                    <as-path>3356 5511 65020 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.191</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 65626</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.84.105/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>57</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>48.94.138.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>42</local-preference>
+                    <med>108</med>
+                    <as-path>3257 1299 3356 2914 65010 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                        <community>64512:300</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.136</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 425360</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.120.107/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>27986</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>37.21.71.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>54</local-preference>
+                    <med>483</med>
+                    <as-path>65001 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.133</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 367946</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>78.16.73.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>96</local-preference>
+                    <med>83</med>
+                    <as-path>64510 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>64512:300</community>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.162</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 276287</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>138.129.160.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>105</local-preference>
+                    <med>70</med>
+                    <as-path>1273 174 64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.9</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 97289</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>195.95.49.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>188</local-preference>
+                    <med>0</med>
+                    <as-path>65100 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:300</community>
+                        <community>64512:100:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.87</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 285536</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>195.228.108.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.1</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>16.226.146.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>215</local-preference>
+                    <med>0</med>
+                    <as-path>1273 3257 65200 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>64512:0:65535</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.88</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 93005</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>204.122.240.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.1</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>82.195.0.0/16</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>50</local-preference>
+                    <med>7</med>
+                    <as-path>2914 65001 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:100</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.115</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 310619</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>34.236.220.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>0</local-preference>
+                    <med>9</med>
+                    <as-path>5511 6461 174 2914 64500 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                        <community>64512:666</community>
+                        <community>no-export</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.49</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 789629</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>34.236.220.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>42</local-preference>
+                    <med>9</med>
+                    <as-path>3257 65020 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                        <community>64512:666</community>
+                        <community>no-export</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.99</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 545613</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>201.96.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>80</local-preference>
+                    <med>24</med>
+                    <as-path>5511 2914 64500 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:666</community>
+                        <community>65000:777</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.154</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 1048365</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>201.96.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>97</local-preference>
+                    <med>24</med>
+                    <as-path>2914 1299 174 65010 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:666</community>
+                        <community>65000:777</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.136</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 194263</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>88.7.22.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>57</local-preference>
+                    <med>64</med>
+                    <as-path>1299 64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>no-advertise</community>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.163</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 772035</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.146.119/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>62290</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>116.66.39.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>104</local-preference>
+                    <med>44</med>
+                    <as-path>1273 65001 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:300</community>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.196</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 796966</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>43.56.56.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>109</local-preference>
+                    <med>80</med>
+                    <as-path>2914 64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.143</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 754016</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>157.119.93.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>214</local-preference>
+                    <med>0</med>
+                    <as-path>1299 5511 3356 1273 65010 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.204</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 909353</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>171.141.87.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>106</local-preference>
+                    <med>38</med>
+                    <as-path>65200 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:666</community>
+                        <community>no-advertise</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.103</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 35386</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>136.205.250.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>RSVP</protocol-name>
+                    <preference>7</preference>
+                    <nh>
+                        <to>10.247.0.5</to>
+                        <via>ge-1/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.147.125/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>13150</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>84.235.170.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>99</local-preference>
+                    <med>56</med>
+                    <as-path>65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:200</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.15</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 589952</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>87.119.128.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>109</local-preference>
+                    <med>13</med>
+                    <as-path>174 64500 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.148</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 207780</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>100.224.243.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>41</local-preference>
+                    <med>455</med>
+                    <as-path>5511 64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:200</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.13</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 443310</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>71.120.0.0/16</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>218</local-preference>
+                    <med>0</med>
+                    <as-path>1273 6461 3257 3356 65200 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:200</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.1</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 448996</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>223.126.99.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.4</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>98.23.183.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>211</local-preference>
+                    <med>0</med>
+                    <as-path>2914 1299 3356 65001 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>65000:777</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.230</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 191931</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>35.105.64.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>110</local-preference>
+                    <med>9</med>
+                    <as-path>3257 174 3356 1299 65010 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>64512:300</community>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.86</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 917775</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.25.133/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>4055</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.99.134/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>21942</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.113.135/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>29545</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.26.136/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>24683</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>135.129.85.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>94</local-preference>
+                    <med>5</med>
+                    <as-path>6461 5511 174 2914 65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.7</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 655344</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>168.112.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Direct</protocol-name>
+                    <preference>0</preference>
+                    <nh>
+                        <to>10.247.0.1</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>104.41.253.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>92</local-preference>
+                    <med>43</med>
+                    <as-path>5511 1299 64500 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>64512:200</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.129</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 369306</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>192.55.31.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>106.175.76.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>48</local-preference>
+                    <med>144</med>
+                    <as-path>64500 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:666</community>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.159</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 811377</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>114.23.125.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.1</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>200.16.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>102</local-preference>
+                    <med>54</med>
+                    <as-path>2914 1273 1299 3257 65100 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.166</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 606580</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>111.190.24.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>42</local-preference>
+                    <med>155</med>
+                    <as-path>1273 65200 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>no-export</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.97</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 629663</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.135.145/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>21319</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>130.133.51.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>59</local-preference>
+                    <med>236</med>
+                    <as-path>65030 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:666</community>
+                        <community>64512:100:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.21</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 77419</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.187.147/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>4394</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>42.26.44.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>97</local-preference>
+                    <med>47</med>
+                    <as-path>174 1299 6461 65200 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.54</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 238765</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.14.149/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>38510</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>21.157.223.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>65</local-preference>
+                    <med>69</med>
+                    <as-path>2914 3356 174 6461 65020 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>65000:777</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.143</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 120135</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>21.157.223.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>99</local-preference>
+                    <med>69</med>
+                    <as-path>5511 65200 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>65000:777</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.130</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 878538</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>106.4.195.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>50</local-preference>
+                    <med>472</med>
+                    <as-path>2914 1299 5511 65010 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:300</community>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.240</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 477537</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>92.144.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>109</local-preference>
+                    <med>35</med>
+                    <as-path>5511 174 65001 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.219</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 7405</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>54.227.128.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>33.41.240.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>49</local-preference>
+                    <med>70</med>
+                    <as-path>65001 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:200</community>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.37</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 869703</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>54.204.204.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Direct</protocol-name>
+                    <preference>0</preference>
+                    <nh>
+                        <to>10.247.0.3</to>
+                        <via>ge-1/1/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.160.156/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>42324</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>75.78.168.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.4</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>213.186.159.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Direct</protocol-name>
+                    <preference>0</preference>
+                    <nh>
+                        <to>10.247.0.1</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>223.232.128.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>218</local-preference>
+                    <med>0</med>
+                    <as-path>65100 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.158</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 707192</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>47.123.172.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>107.192.65.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>181</local-preference>
+                    <med>0</med>
+                    <as-path>3356 1299 2914 3257 65030 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.211</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 806978</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>19.247.248.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>198</local-preference>
+                    <med>0</med>
+                    <as-path>5511 65030 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.80</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 94747</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>39.196.180.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>46</local-preference>
+                    <med>111</med>
+                    <as-path>174 1299 3356 5511 65100 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.69</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 146320</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.92.164/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>52917</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>36.174.92.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>218</local-preference>
+                    <med>0</med>
+                    <as-path>1299 174 5511 65001 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.42</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 836846</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>33.251.83.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.1</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>62.78.180.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>LDP</protocol-name>
+                    <preference>9</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>xe-0/0/1.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>76.229.204.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>104</local-preference>
+                    <med>42</med>
+                    <as-path>65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.112</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 923682</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>32.6.128.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>51</local-preference>
+                    <med>36</med>
+                    <as-path>5511 65020 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:200</community>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.53</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 652218</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.88.170/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>39672</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>105.234.6.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>212</local-preference>
+                    <med>0</med>
+                    <as-path>3257 3356 65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.169</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 1003165</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>56.237.24.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>105</local-preference>
+                    <med>93</med>
+                    <as-path>65020 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                        <community>64512:666</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.239</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 824162</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.251.173/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>12698</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>104.7.164.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>41</local-preference>
+                    <med>43</med>
+                    <as-path>1273 5511 3356 65030 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.205</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 314076</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>141.64.0.0/20</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>109</local-preference>
+                    <med>67</med>
+                    <as-path>1299 5511 1273 64510 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:200</community>
+                        <community>no-export</community>
+                        <community>64512:0:65535</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.163</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 499667</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.218.176/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>17158</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>14.136.168.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>167</local-preference>
+                    <med>0</med>
+                    <as-path>3356 3257 174 65100 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.210</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 812201</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>14.136.168.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>189</local-preference>
+                    <med>0</med>
+                    <as-path>5511 6461 65020 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.240</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 884251</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>126.60.106.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.5</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>155.65.250.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>103</local-preference>
+                    <med>37</med>
+                    <as-path>1299 65010 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.107</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 869686</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>182.139.137.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>108</local-preference>
+                    <med>45</med>
+                    <as-path>6461 3356 5511 1273 65010 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:666</community>
+                        <community>64512:300</community>
+                        <community>65000:1:1</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.92</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 79723</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.73.181/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>14146</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>73.181.207.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>Static</protocol-name>
+                    <preference>5</preference>
+                    <nh>
+                        <to>10.247.0.2</to>
+                        <via>xe-0/0/0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.108.183/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>54607</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>167.217.0.0/16</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>100</local-preference>
+                    <med>66</med>
+                    <as-path>65020 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.176</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 520799</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>171.189.40.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>54</local-preference>
+                    <med>422</med>
+                    <as-path>6461 65200 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.106</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 402381</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>184.56.1.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>192</local-preference>
+                    <med>0</med>
+                    <as-path>3257 2914 65200 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>64512:666</community>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.99</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 374717</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>1.157.255.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>50</local-preference>
+                    <med>291</med>
+                    <as-path>2914 1273 174 5511 65100 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.60</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 273564</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>159.213.136.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>182</local-preference>
+                    <med>0</med>
+                    <as-path>65020 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.36</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 311002</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>159.213.136.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>194</local-preference>
+                    <med>0</med>
+                    <as-path>6461 1273 65030 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.58</to>
+                        <via>xe-0/0/1.0</via>
+                        <mpls-label>Push 1002449</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.167.189/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>47288</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>1.6.186.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag> </active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>89</local-preference>
+                    <med>11</med>
+                    <as-path>5511 3356 174 2914 65020 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>no-export</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.143</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 773887</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>1.6.186.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>109</local-preference>
+                    <med>11</med>
+                    <as-path>3257 174 5511 65100 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-advertise</community>
+                        <community>no-export</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.106</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 158139</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>209.11.244.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>42</local-preference>
+                    <med>171</med>
+                    <as-path>65200 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.168</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 825213</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>222.225.114.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>57</local-preference>
+                    <med>27</med>
+                    <as-path>174 65200 I</as-path>
+                    <learned-from>10.100.177.30</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                        <community>64512:200</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.238</to>
+                        <via>xe-0/0/0.0</via>
+                        <mpls-label>Push 80354</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>10.255.171.193/32</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>OSPF</protocol-name>
+                    <preference>10</preference>
+                    <metric>36408</metric>
+                    <nh>
+                        <via>lo0.0</via>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>26.206.158.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>103</local-preference>
+                    <med>5</med>
+                    <as-path>6461 65010 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.3</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 52695</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>46.66.239.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>43</local-preference>
+                    <med>447</med>
+                    <as-path>174 1299 2914 3356 65200 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>65000:777</community>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.222</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 814729</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>134.131.12.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>59</local-preference>
+                    <med>115</med>
+                    <as-path>1299 1273 65100 I</as-path>
+                    <learned-from>10.100.177.27</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>65000:777</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.184</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 416693</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>113.34.129.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>108</local-preference>
+                    <med>92</med>
+                    <as-path>1273 1299 6461 64500 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>peer</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                        <community>65000:777</community>
+                        <community>64512:300</community>
+                        <community>64512:0:65535</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.118</to>
+                        <via>ge-1/0/0.0</via>
+                        <mpls-label>Push 36261</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>102.219.24.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>56</local-preference>
+                    <med>72</med>
+                    <as-path>1299 1273 3257 3356 65001 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>upstream</peer-type>
+                    <communities>
+                        <community>no-export</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.94</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 1022282</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>68.249.160.0/22</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>181</local-preference>
+                    <med>0</med>
+                    <as-path>3257 65200 I</as-path>
+                    <learned-from>10.100.177.26</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:300</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.172</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 98920</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+            <rt junos:style="brief">
+                <rt-destination>12.114.193.0/24</rt-destination>
+                <rt-entry>
+                    <active-tag>*</active-tag>
+                    <protocol-name>BGP</protocol-name>
+                    <preference>170</preference>
+                    <local-preference>213</local-preference>
+                    <med>0</med>
+                    <as-path>3257 3356 1299 65030 I</as-path>
+                    <learned-from>10.100.177.29</learned-from>
+                    <peer-type>customer</peer-type>
+                    <communities>
+                        <community>64512:100</community>
+                        <community>no-advertise</community>
+                    </communities>
+                    <nh>
+                        <to>10.100.177.184</to>
+                        <via>ge-1/1/0.0</via>
+                        <mpls-label>Push 475264</mpls-label>
+                    </nh>
+                </rt-entry>
+            </rt>
+        </route-table>
+    </route-information>
+</rpc-reply>

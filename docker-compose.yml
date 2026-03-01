@@ -1,0 +1,47 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - ROUTER_HOST=${ROUTER_HOST:-router.example.com}
+      - ROUTER_USER=${ROUTER_USER:-admin}
+      - ROUTER_PASS=${ROUTER_PASS:-password}
+    volumes:
+      - ./rib-data:/app/rib-data
+    depends_on:
+      - redis
+    ports:
+      - "8000:8000"
+
+  worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    command: python -m arq backend.app.worker.WorkerSettings
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - ROUTER_HOST=${ROUTER_HOST:-router.example.com}
+      - ROUTER_USER=${ROUTER_USER:-admin}
+      - ROUTER_PASS=${ROUTER_PASS:-password}
+    depends_on:
+      - redis
+
+  tui:
+    build:
+      context: .
+      dockerfile: tui/Dockerfile.dev
+    environment:
+      - BACKEND_URL=http://backend:8000
+    depends_on:
+      - backend
+    stdin_open: true # Allows for interactive use if needed
+    tty: true

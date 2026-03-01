@@ -1,0 +1,5 @@
+textual
+httpx
+websockets
+pydantic
+PyYAML

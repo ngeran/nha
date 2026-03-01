@@ -1,0 +1,138 @@
+{
+  "device": "172.27.200.200",
+  "hostname": "MLRENGBSMSRX01",
+  "timestamp": "2026-02-28T01:05:39.568530",
+  "routes": [
+    {
+      "prefix": "0.0.0.0",
+      "table": "inet.0",
+      "protocol": "Static",
+      "next_hop": "ge-0/0/0.0",
+      "age": 0,
+      "preference": 5,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.0.1.0",
+      "table": "inet.0",
+      "protocol": "Direct",
+      "next_hop": "lo0.0",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.0.1.1",
+      "table": "inet.0",
+      "protocol": "Local",
+      "next_hop": "",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.100.250.1",
+      "table": "inet.0",
+      "protocol": "Direct",
+      "next_hop": "lo0.0",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.100.250.2",
+      "table": "inet.0",
+      "protocol": "OSPF",
+      "next_hop": "ge-0/0/2.0",
+      "age": 0,
+      "preference": 10,
+      "metric": 1,
+      "active": true
+    },
+    {
+      "prefix": "10.100.250.2",
+      "table": "inet.0",
+      "protocol": "OSPF",
+      "next_hop": "ge-0/0/2.0",
+      "age": 0,
+      "preference": 10,
+      "metric": 1,
+      "active": true
+    },
+    {
+      "prefix": "10.255.0.0",
+      "table": "inet.0",
+      "protocol": "Direct",
+      "next_hop": "ge-0/0/2.0",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "10.255.0.0",
+      "table": "inet.0",
+      "protocol": "Local",
+      "next_hop": "",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "172.27.200.0",
+      "table": "inet.0",
+      "protocol": "Direct",
+      "next_hop": "ge-0/0/0.0",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "172.27.200.200",
+      "table": "inet.0",
+      "protocol": "Local",
+      "next_hop": "",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "192.168.1.1",
+      "table": "inet.0",
+      "protocol": "Local",
+      "next_hop": "",
+      "age": 0,
+      "preference": 0,
+      "metric": 0,
+      "active": true
+    },
+    {
+      "prefix": "224.0.0.2",
+      "table": "inet.0",
+      "protocol": "LDP",
+      "next_hop": "",
+      "age": 0,
+      "preference": 9,
+      "metric": 1,
+      "active": true
+    },
+    {
+      "prefix": "224.0.0.5",
+      "table": "inet.0",
+      "protocol": "OSPF",
+      "next_hop": "",
+      "age": 0,
+      "preference": 10,
+      "metric": 1,
+      "active": true
+    }
+  ],
+  "total_routes": 13
+}

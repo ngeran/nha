@@ -1,0 +1,37 @@
+/* Route Detail Screen Styles - Simple Clean Design */
+
+RouteDetailScreen {
+    align: center middle;
+}
+
+#route-detail-container {
+    width: 70;
+    height: auto;
+    max-height: 50%;
+    background: #16161e;
+    border: solid #7aa2f7;
+    padding: 2;
+}
+
+#detail-title {
+    width: 100%;
+    content-align: center middle;
+    text-style: bold;
+    color: #7aa2f7;
+    margin-bottom: 1;
+    padding-bottom: 1;
+    border-bottom: solid #3b4261;
+}
+
+#route-info {
+    color: #a9b1d6;
+}
+
+#detail-footer {
+    width: 100%;
+    align: center middle;
+    padding-top: 1;
+    border-top: solid #3b4261;
+    color: #565f89;
+    text-style: italic;
+}

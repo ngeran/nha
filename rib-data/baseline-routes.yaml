@@ -1,0 +1,6 @@
+routes: []
+metadata:
+  description: "Baseline routing table for RIB Monitor"
+  created: null
+  source: "manual"
+  format: "yaml"

@@ -1,0 +1,95 @@
+/* Modal Screen Styles - Connect, Import, Export, Help */
+
+ConnectionScreen, ImportScreen, ExportScreen {
+    align: center middle;
+}
+
+HelpScreen {
+    align: center middle;
+}
+
+#connect-form {
+    width: 50;
+    height: auto;
+    max-height: 80%;
+    background: #16161e;
+    border: solid #7aa2f7;
+    padding: 2;
+}
+
+/* Help form - wider and full height */
+HelpScreen #connect-form {
+    width: 80;
+    height: 90%;
+}
+
+#connect-title {
+    width: 100%;
+    text-align: center;
+    text-style: bold;
+    color: #7aa2f7;
+    margin-bottom: 2;
+    padding-bottom: 1;
+    border-bottom: solid #3b4261;
+}
+
+Label {
+    color: #a9b1d6;
+    margin-top: 1;
+}
+
+Input {
+    margin: 0 0 1 0;
+    background: #1a1b26;
+    border: solid #3b4261;
+}
+
+Input:focus {
+    border: solid #7aa2f7;
+}
+
+Select {
+    margin: 0 0 1 0;
+    background: #1a1b26;
+    border: solid #3b4261;
+}
+
+Select:focus {
+    border: solid #7aa2f7;
+}
+
+/* Primary button - blue like Connect */
+Button {
+    width: 100%;
+    margin-top: 1;
+    background: #7aa2f7;
+    color: #1a1b26;
+    text-style: bold;
+}
+
+Button:hover {
+    background: #9aa5ce;
+}
+
+/* Help content scrolling */
+#help-content {
+    height: 1fr;
+    overflow-y: auto;
+}
+
+/* Help two-column layout */
+.help-columns {
+    width: 100%;
+    height: auto;
+}
+
+.help-column {
+    width: 1fr;
+    padding: 1;
+}
+
+/* Footer styling for modal screens */
+Footer {
+    background: #24283b;
+    color: #a9b1d6;
+}
