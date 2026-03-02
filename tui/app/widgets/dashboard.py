@@ -117,51 +117,54 @@ class DashboardWidget(Widget):
         if stats:
             with Grid(classes="dashboard-grid"):
                 # Total Routes
-                yield self._create_stat_card(
-                    "Total Routes", stats.get("total_routes", 0), "All protocols"
-                )
+                with Vertical(classes="stat-card"):
+                    yield Static("Total Routes", classes="stat-title")
+                    yield Static(
+                        str(stats.get("total_routes", 0)), classes="stat-value"
+                    )
+                    yield Static("All protocols", classes="stat-subtitle")
 
                 # Active Routes
-                yield self._create_stat_card(
-                    "Active Routes", stats.get("active_routes", 0), "Reachable"
-                )
+                with Vertical(classes="stat-card"):
+                    yield Static("Active Routes", classes="stat-title")
+                    yield Static(
+                        str(stats.get("active_routes", 0)), classes="stat-value"
+                    )
+                    yield Static("Reachable", classes="stat-subtitle")
 
                 # BGP Routes
-                yield self._create_stat_card(
-                    "BGP Routes", stats.get("bgp_routes", 0), "External"
-                )
+                with Vertical(classes="stat-card"):
+                    yield Static("BGP Routes", classes="stat-title")
+                    yield Static(str(stats.get("bgp_routes", 0)), classes="stat-value")
+                    yield Static("External", classes="stat-subtitle")
 
                 # Unique Origins
-                yield self._create_stat_card(
-                    "Origin ASNs", stats.get("unique_origins", 0), "AS numbers"
-                )
+                with Vertical(classes="stat-card"):
+                    yield Static("Origin ASNs", classes="stat-title")
+                    yield Static(
+                        str(stats.get("unique_origins", 0)), classes="stat-value"
+                    )
+                    yield Static("AS numbers", classes="stat-subtitle")
 
                 # Top 5 Origin ASNs
                 if "top_origins" in stats and stats["top_origins"]:
                     top_origins_text = "\\n".join(
                         [f"{asn}: {count}" for asn, count in stats["top_origins"][:5]]
                     )
-                    yield self._create_stat_card(
-                        "Top Origin ASNs", "", top_origins_text, span=2
-                    )
+                    with Vertical(classes="stat-card"):
+                        yield Static("Top Origin ASNs", classes="stat-title")
+                        yield Static("", classes="stat-value")
+                        yield Static(top_origins_text, classes="stat-subtitle")
 
                 # Top 5 Transit ASNs
                 if "top_transit" in stats and stats["top_transit"]:
                     top_transit_text = "\\n".join(
                         [f"{asn}: {count}" for asn, count in stats["top_transit"][:5]]
                     )
-                    yield self._create_stat_card(
-                        "Top Transit ASNs", "", top_transit_text, span=2
-                    )
-
-    def _create_stat_card(self, title: str, value: str, subtitle: str, span: int = 1):
-        """Create a statistics card"""
-        card = Vertical(classes=f"stat-card")
-        card.mount(Static(title, classes="stat-title"))
-        if value:
-            card.mount(Static(str(value), classes="stat-value"))
-        card.mount(Static(subtitle, classes="stat-subtitle"))
-        return card
+                    with Vertical(classes="stat-card"):
+                        yield Static("Top Transit ASNs", classes="stat-title")
+                        yield Static("", classes="stat-value")
+                        yield Static(top_transit_text, classes="stat-subtitle")
 
     def _load_baseline_stats(self) -> Optional[Dict]:
         """Load baseline statistics"""

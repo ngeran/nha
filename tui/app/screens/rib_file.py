@@ -95,7 +95,7 @@ class RIBFileScreen(Screen):
         color: #9aa5ce;
         border: none;
         padding: 0 1;
-        margin-right: 1;
+        margin-right: 0;
     }
 
     .chip:hover {
@@ -124,7 +124,7 @@ class RIBFileScreen(Screen):
     .filter-row {
         background: #16161e;
         padding: 0 2;
-        height: 3;
+        height: 5;
         margin: 1 0;
         align: left middle;
         border-top: solid #565f89;
